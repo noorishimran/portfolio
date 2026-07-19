@@ -12,19 +12,19 @@ export default function Home() {
       demo: "#",
     },
     {
-      name: "AI Voice Receptionist",
+      name: "AI Content Forensics System",
       description:
-        "Work-in-progress: Generative AI receptionist prototype. Partial reservation and order capture implemented; continuing development to complete full call handling flows.",
-      technologies: ["Python", "Flask", "Twilio", "WhatsApp", "NLP"],
-      github: "https://github.com/Muhammad-Hassan216/AI-Voice-Receptionist-",
+        "Fast, explainable Python demo that estimates whether a piece of text is AI-generated and shows the reasoning behind the decision. Built for hackathon demos with a polished Streamlit UI, CLI demo, batch endpoint, and offline fallback models.",
+      technologies: ["Python", "Streamlit", "scikit-learn", "CLI", "Explainable AI"],
+      github: "https://github.com/noorishimran/AI-Content-Forensics-System",
       demo: "#",
     },
     {
-      name: "The Body Fragrances",
+      name: "UMT Chatbot",
       description:
-        "Fragrance business platform built as an Android Studio Java app with order booking and transaction flows, backed by a PHP admin panel, plus a separate HTML/CSS/JS front-end website.",
-      technologies: ["Java", "Android Studio", "PHP", "HTML", "CSS", "JavaScript"],
-      github: "https://github.com/Muhammad-Hassan216/The-Body-Fragrances",
+        "Flask-based campus support chatbot focused on study planning. It combines retrieval-augmented responses, risk-aware routing, optional Gemini generation, session-aware follow-ups, and an evaluation pipeline for benchmarking response quality.",
+      technologies: ["Python", "Flask", "RAG", "Gemini", "Evaluation Pipeline"],
+      github: "https://github.com/noorishimran/Umt-Chatbot",
       demo: "#",
     },
   ];
@@ -40,7 +40,7 @@ export default function Home() {
       <nav className="fixed top-0 z-50 w-full border-b border-white/10 bg-[#050816]/80 backdrop-blur-xl">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
           <div>
-            <div className="text-2xl font-semibold tracking-tight">Muhammad Hassan</div>
+            <div className="text-2xl font-semibold tracking-tight">Noorish Imran</div>
             <p className="text-xs uppercase tracking-[0.32em] text-cyan-300/80">AI Portfolio</p>
           </div>
           <div className="hidden items-center gap-8 text-sm text-white/70 md:flex">
@@ -65,14 +65,14 @@ export default function Home() {
           <div>
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/10 px-4 py-2 text-sm text-cyan-200">
               <span className="h-2 w-2 rounded-full bg-cyan-300" />
-              Available for full-time roles, freelance projects, and contract work
+              Building AI demos, research prototypes, and explainable product experiences
             </div>
             <h1 className="max-w-4xl text-5xl font-semibold leading-[1.02] tracking-tight sm:text-6xl lg:text-7xl">
-              Transform your vision into intelligent products.
+              Turning complex AI ideas into clear, demo-ready products.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/72 sm:text-xl">
-              I build production-ready AI systems, mobile applications, and automation workflows. From on-device edge AI to GenAI integrations,
-              I deliver full-stack solutions with strong UX and deployment expertise. Proven through award-winning projects and real-world deployments.
+              I build practical AI systems with a strong focus on explainability, usability, and presentation. From assistive technology to
+              AI-content analysis workflows, I turn research-driven concepts into polished demos that are easy to understand and showcase.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
@@ -92,9 +92,9 @@ export default function Home() {
 
             <div className="mt-10 grid gap-4 sm:grid-cols-3">
               {[
-                { label: "Education", value: "UMT - CS, July 2026" },
+                { label: "Focus", value: "Applied AI, Explainability, and Product Demos" },
                 { label: "Recognition", value: "Harvard HSIL Hackathon — 2nd Runner-Up" },
-                { label: "Delivery Model", value: "Full-Stack & Deployment" },
+                { label: "Delivery Model", value: "Research, Prototyping, and Showcase Builds" },
               ].map((item) => (
                 <div key={item.label} className="rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur">
                   <p className="text-xs uppercase tracking-[0.24em] text-white/45">{item.label}</p>
@@ -141,45 +141,45 @@ export default function Home() {
         <section id="services" className="border-t border-white/10 py-20">
           <div className="mb-12">
             <p className="text-sm uppercase tracking-[0.28em] text-cyan-300/80">Services & Deliverables</p>
-            <h2 className="mt-3 text-4xl font-semibold tracking-tight">What I can build for you</h2>
+            <h2 className="mt-3 text-4xl font-semibold tracking-tight">What I build</h2>
           </div>
 
           <div className="grid gap-6 lg:grid-cols-2">
             {[
               {
-                title: "AI & Automation Products",
+                title: "AI Demo Systems",
                 deliverables: [
-                  "Edge AI systems (on-device inference, computer vision)",
-                  "GenAI integrations (LLM-powered workflows, chatbots, voice systems)",
-                  "Intelligent automation (process optimization, workflow management)",
-                  "Privacy-first AI solutions (on-device processing, federated learning)"
+                  "Explainable AI prototypes for judges, clients, and technical reviews",
+                  "Text-analysis and classification workflows with transparent outputs",
+                  "Hackathon-ready demos with polished UI and structured walkthroughs",
+                  "Offline-capable fallback paths for unstable or restricted environments"
                 ]
               },
               {
-                title: "Mobile & Web Applications",
+                title: "Product Interfaces",
                 deliverables: [
-                  "Cross-platform mobile apps (Flutter)",
-                  "Native Android apps (Android Studio, Java, Kotlin)",
-                  "Website development (HTML, CSS, JavaScript)",
-                  "Responsive, accessible, and production-ready UX"
+                  "Streamlit apps for fast interactive demos",
+                  "Responsive portfolio and landing pages",
+                  "Presentation-friendly flows for live walkthroughs",
+                  "Clear UX focused on trust, readability, and feature visibility"
                 ]
               },
               {
-                title: "Backend & System Design",
+                title: "Modeling & Delivery",
                 deliverables: [
-                  "Backend development (PHP, Python, Node.js)",
-                  "Database design & optimization (SQL, NoSQL)",
-                  "API development & integration (REST, webhooks)",
-                  "Admin panels, dashboards, and management systems"
+                  "Python-based model training and calibration flows",
+                  "Batch prediction endpoints for lightweight integrations",
+                  "CLI demos and exportable outputs for evaluation",
+                  "Deployment-ready packaging for web demos and local runs"
                 ]
               },
               {
-                title: "Domain Expertise",
+                title: "Project Strengths",
                 deliverables: [
-                  "Assistive technology & accessibility-first design",
-                  "Restaurant & hospitality automation",
-                  "E-commerce & order management systems",
-                  "Proof-of-concept to production pipeline"
+                  "Explainability-first design for model trust",
+                  "Rapid prototyping under hackathon timelines",
+                  "Strong technical storytelling for demos and judging",
+                  "Research-backed systems with practical delivery focus"
                 ]
               }
             ].map((service, idx) => (
@@ -202,23 +202,23 @@ export default function Home() {
           <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
             <div>
               <p className="text-sm uppercase tracking-[0.28em] text-cyan-300/80">About</p>
-              <h2 className="mt-3 text-4xl font-semibold tracking-tight">Engineering with purpose, shipping with impact.</h2>
+              <h2 className="mt-3 text-4xl font-semibold tracking-tight">Building AI projects people can understand.</h2>
               <p className="mt-5 max-w-xl text-base leading-8 text-white/70">
-                I focus on delivering production-ready systems that solve real problems. Every project combines cutting-edge AI/automation with practical UX,
-                thoughtful design, and deployment expertise. From concept through scaling, I build products people actually want to use.
+                My work centers on turning technical AI concepts into usable, explainable, and presentation-ready products. I care about systems that not only
+                function well, but also communicate clearly through their interface, outputs, and demo flow.
               </p>
             </div>
 
             <div className="grid gap-4 sm:grid-cols-2">
               {[
-                "Edge-AI & Computer Vision",
-                "Flutter (Cross-platform Mobile)",
-                "Android Studio (Native Apps)",
-                "PHP Backend Development",
-                "HTML, CSS, JavaScript",
-                "Full-Stack Development",
-                "E-commerce & Order Systems",
-                "Automation Workflows",
+                "Python",
+                "Streamlit",
+                "scikit-learn",
+                "Explainable AI",
+                "CLI Tooling",
+                "Rapid Prototyping",
+                "UI for Technical Demos",
+                "Applied AI Research",
               ].map((skill) => (
                 <div key={skill} className="rounded-2xl border border-white/10 bg-white/5 px-4 py-4 text-sm font-medium text-white/86 backdrop-blur">
                   {skill}
@@ -235,8 +235,8 @@ export default function Home() {
               <h2 className="mt-3 text-4xl font-semibold tracking-tight">Featured Projects</h2>
             </div>
             <p className="max-w-2xl text-sm leading-7 text-white/65">
-              Award-winning products spanning assistive AI, automation workflows, and full-stack e-commerce. Each demonstrates end-to-end delivery,
-              from research and prototyping to production deployment and user validation.
+              A selected mix of assistive AI and explainable ML projects. Each one is built to demonstrate technical depth clearly,
+              with a strong emphasis on usable interfaces and effective live presentation.
             </p>
           </div>
 
@@ -301,30 +301,30 @@ export default function Home() {
         <section id="contact" className="border-t border-white/10 py-20">
           <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/8 to-white/4 p-8 md:p-12">
             <div className="max-w-3xl">
-              <p className="text-sm uppercase tracking-[0.28em] text-cyan-300/80">Let's Build Together</p>
-              <h2 className="mt-3 text-4xl font-semibold tracking-tight">Ready to turn your idea into reality.</h2>
+              <p className="text-sm uppercase tracking-[0.28em] text-cyan-300/80">Let&apos;s Build Together</p>
+              <h2 className="mt-3 text-4xl font-semibold tracking-tight">Interested in AI projects with clear, demo-ready impact?</h2>
               <p className="mt-5 text-base leading-8 text-white/70">
-                Whether you need a full-stack AI product, mobile application, automation system, or technical consultation,
-                I'm ready to discuss your vision and deliver results. Let's explore what we can build together.
+                This portfolio highlights Noorish Imran&apos;s work in assistive AI, explainable machine learning, and student-support systems.
+                For collaborations, demos, or portfolio review, use the profile links below.
               </p>
             </div>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-              <a href="mailto:codewithmhassan786@gmail.com" className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-100">
-                Email Me
+              <a href="https://github.com/noorishimran" target="_blank" rel="noopener noreferrer" className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-100">
+                GitHub Profile
               </a>
-              <a href="https://linkedin.com/in/muhammad-hassan-598547331" target="_blank" rel="noopener noreferrer" className="rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:border-cyan-300/40 hover:bg-white/10">
+              <a href="https://www.linkedin.com/in/noorish-imran-3a9581291" target="_blank" rel="noopener noreferrer" className="rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:border-cyan-300/40 hover:bg-white/10">
                 LinkedIn
               </a>
-              <a href="https://github.com/Muhammad-Hassan216" target="_blank" rel="noopener noreferrer" className="rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:border-cyan-300/40 hover:bg-white/10">
-                GitHub
+              <a href="https://github.com/noorishimran/Umt-Chatbot" target="_blank" rel="noopener noreferrer" className="rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:border-cyan-300/40 hover:bg-white/10">
+                Latest Project
               </a>
             </div>
           </div>
         </section>
 
         <footer className="border-t border-white/10 py-10 text-center text-sm text-white/45">
-          <p>© 2026 Muhammad Hassan. Built with Next.js, Tailwind CSS, and a focus on practical AI products.</p>
+          <p>© 2026 Noorish Imran. Built with Next.js, Tailwind CSS, and a focus on practical AI products.</p>
         </footer>
       </main>
     </div>
