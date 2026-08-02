@@ -1,6 +1,6 @@
 # Portfolio Website
 
-Modern, responsive portfolio website for Hassan - Software Engineer & AI Researcher specializing in Edge-AI, Generative AI, and Full-Stack development.
+Modern, responsive portfolio website for Noorish Imran - Software Engineer & AI Researcher specializing in Edge-AI, Generative AI, and Full-Stack development.
 
 ## Features
 

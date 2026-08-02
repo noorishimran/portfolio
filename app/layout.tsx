@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Muhammad Hassan | AI Portfolio",
-  description: "Portfolio of Muhammad Hassan featuring Edge-AI, Flutter, full-stack systems, and an AI Voice Receptionist for restaurants.",
+  title: "Noorish Imran | AI Portfolio",
+  description: "Portfolio of Noorish Imran featuring assistive AI, explainable systems, chatbots, and demo-ready machine learning projects.",
 };
 
 export default function RootLayout({

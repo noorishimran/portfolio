@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  background: var(--background);
+  background: linear-gradient(135deg, #050816 0%, #101a31 45%, #0f172a 100%);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -29,4 +29,9 @@ body {
 
 a {
   text-decoration: none;
+}
+
+::selection {
+  background: rgba(34, 211, 238, 0.3);
+  color: white;
 }
