@@ -20,6 +20,14 @@ export default function Home() {
       demo: "Conversational demo",
     },
     {
+      name: "User Admin Chatbot",
+      description:
+        "A Flask and SQLite chatbot for admin-side user management through natural-language commands, including add, delete, update, and live table refresh workflows.",
+      technologies: ["Python", "Flask", "SQLite", "HTML", "CSS"],
+      github: "https://github.com/noorishimran/CHATBOT_USER_ADMIN",
+      demo: "Admin chatbot demo",
+    },
+    {
       name: "AI Content Forensics System",
       description:
         "An explainable Python app for detecting AI-generated text and presenting the reasoning in a simple, demo-ready format for review and analysis.",
