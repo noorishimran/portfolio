@@ -4,12 +4,40 @@ import CertificateViewer from "./components/CertificateViewer";
 export default function Home() {
   const projects = [
     {
+      name: "MoinSystems AI Chatbot",
+      description:
+        "A production-ready AI website chatbot built with RAG, intent detection, session management, and high-intent lead capture, backed by FastAPI, PostgreSQL/pgvector, Gemini, and a React frontend.",
+      technologies: ["FastAPI", "RAG", "Gemini", "PostgreSQL", "React"],
+      github: "https://github.com/noorishimran/moin-ai-chatbot",
+      demo: "Live AI chatbot",
+      badge: "Internship",
+    },
+    {
+      name: "Meeting Intelligence Assistant",
+      description:
+        "A Streamlit-based meeting analysis tool that turns transcripts into evidence-grounded summaries, decisions, action items, risks, open questions, and validated structured JSON using Gemini.",
+      technologies: ["Python", "Streamlit", "Gemini", "Prompt Engineering", "Evaluation"],
+      github: "https://github.com/noorishimran/meeting-intelligence-assistant",
+      demo: "Meeting intelligence workflow",
+      badge: "Internship",
+    },
+    {
+      name: "DevFlow Copilot",
+      description:
+        "A local-first GenAI engineering copilot that converts client requirements and UI screenshots into validated specifications, acceptance criteria, implementation plans, QA tests, and developer-ready artifacts.",
+      technologies: ["Python", "Streamlit", "Ollama", "Qwen", "Multimodal AI"],
+      github: "https://github.com/noorishimran/devflow-copilot",
+      demo: "Local GenAI workflow",
+      badge: "Internship",
+    },
+    {
       name: "VisionMate",
       description:
         "A Flutter-based assistive mobile system with on-device obstacle detection, offline face recognition, voice guidance, and safety alerts for more confident daily navigation.",
       technologies: ["Flutter", "Edge AI", "TensorFlow Lite", "Accessibility"],
       github: "https://github.com/noorishimran/VisionMate",
       demo: "Assistive mobile flow",
+      badge: "Featured",
     },
     {
       name: "UMT Chatbot",
@@ -18,6 +46,7 @@ export default function Home() {
       technologies: ["Python", "Flask", "RAG", "Gemini", "Evaluation"],
       github: "https://github.com/noorishimran/Umt-Chatbot",
       demo: "Conversational demo",
+      badge: "Featured",
     },
     {
       name: "User Admin Chatbot",
@@ -26,6 +55,7 @@ export default function Home() {
       technologies: ["Python", "Flask", "SQLite", "HTML", "CSS"],
       github: "https://github.com/noorishimran/CHATBOT_USER_ADMIN",
       demo: "Admin chatbot demo",
+      badge: "Featured",
     },
     {
       name: "AI Content Forensics System",
@@ -34,6 +64,7 @@ export default function Home() {
       technologies: ["Python", "Streamlit", "scikit-learn", "CLI", "Explainable AI"],
       github: "https://github.com/noorishimran/AI-Content-Forensics-System",
       demo: "Forensics walkthrough",
+      badge: "Featured",
     },
     {
       name: "Streamlit First App",
@@ -42,6 +73,7 @@ export default function Home() {
       technologies: ["Python", "Streamlit", "UI", "Prototyping"],
       github: "https://github.com/noorishimran/streamlit-first-app",
       demo: "Starter template",
+      badge: "Featured",
     },
     {
       name: "Streamlit YOLOv8 App",
@@ -50,6 +82,7 @@ export default function Home() {
       technologies: ["Python", "Streamlit", "YOLOv8", "Computer Vision"],
       github: "https://github.com/noorishimran/streamlit-yolov8-app",
       demo: "Vision demo",
+      badge: "Featured",
     },
   ];
 
@@ -274,7 +307,7 @@ export default function Home() {
                     <p className="text-xs uppercase tracking-[0.28em] text-white/40">Project {idx + 1}</p>
                     <h3 className="mt-2 text-2xl font-semibold">{project.name}</h3>
                   </div>
-                  <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/60">Featured</span>
+                  <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/60">{project.badge}</span>
                 </div>
 
                 <p className="mt-4 text-sm leading-7 text-white/70">{project.description}</p>
