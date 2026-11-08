@@ -4,6 +4,25 @@ import CertificateViewer from "./components/CertificateViewer";
 export default function Home() {
   const projects = [
     {
+      name: "MarketMind AI — AI Marketing Content Generator",
+      description:
+        "Built a full-stack GenAI marketing platform that turns product briefs into campaign strategies, platform-specific copy, visual concepts, and AI-generated images. Features persistent campaign history and an approval-gated AI campaign agent.",
+      technologies: ["React", "FastAPI", "Gemini", "Cloudflare Workers AI", "Supabase", "AI Agents"],
+      github: "https://github.com/noorishimran/MarketMind-AI",
+      demo: "Live Demo",
+      demoUrl: "https://market-mind-steel.vercel.app",
+      badge: "Big Brains Internship",
+    },
+    {
+      name: "StudyMate — MCP-Powered AI Agent",
+      description:
+        "Developed a Gemini-powered study planning agent using a custom Model Context Protocol server. Discovers and calls validated tools for calculating study hours, creating subject plans, and generating study tips.",
+      technologies: ["Python", "Gemini", "MCP", "Tool Calling", "AI Agents"],
+      github: "https://github.com/noorishimran/studymate-mcp-agent",
+      demo: "GitHub",
+      badge: "Big Brains Internship",
+    },
+    {
       name: "MoinSystems AI Chatbot",
       description:
         "A production-ready AI website chatbot built with RAG, intent detection, session management, and high-intent lead capture, backed by FastAPI, PostgreSQL/pgvector, Gemini, and a React frontend.",
@@ -324,9 +343,11 @@ export default function Home() {
                   <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-rose-200 transition hover:text-white">
                     GitHub →
                   </a>
-                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-white/70 transition hover:text-white">
-                    {project.demo} →
-                  </a>
+                  {"demoUrl" in project && project.demoUrl && (
+                    <a href={project.demoUrl} target="_blank" rel="noopener noreferrer" className="text-white/70 transition hover:text-white">
+                      {project.demo} →
+                    </a>
+                  )}
                 </div>
               </article>
             ))}
